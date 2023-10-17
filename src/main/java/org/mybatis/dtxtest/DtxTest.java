@@ -29,10 +29,14 @@ public class DtxTest {
     public static void main(String[] args) throws IOException {
         String resource = "org/mybatis/mybatis-config.xml";
         InputStream inputStream = Resources.getResourceAsStream(resource);
+
+        // 拿到文件资源
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
         ActivityMapper mapper = sqlSession.getMapper(ActivityMapper.class);
         List<Activity> activities = mapper.selectAllActivity();
         System.out.println(activities);
     }
+
+
 }

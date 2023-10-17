@@ -48,7 +48,7 @@ import org.apache.ibatis.io.ResolverUtil;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.reflection.Jdk;
 
-/**
+/** 类型处理程序注册器
  * @author Clinton Begin
  * @author Kazuki Shimizu
  */

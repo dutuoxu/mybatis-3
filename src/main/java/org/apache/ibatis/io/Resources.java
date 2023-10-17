@@ -26,8 +26,8 @@ import java.nio.charset.Charset;
 import java.util.Properties;
 
 /**
- * A class to simplify access to resources through the classloader.
- *
+ * A class to simplify access to resources through the classloader. <br>
+ * 一个类，用于简化通过类加载器对资源的访问。
  * @author Clinton Begin
  */
 public class Resources {

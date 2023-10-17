@@ -202,6 +202,8 @@ public class ClassLoaderWrapper {
   }
 
   ClassLoader[] getClassLoaders(ClassLoader classLoader) {
+
+    // 按照官方文档运行的时候,classLoader为null,defaultClassLoader为null
     return new ClassLoader[]{
         classLoader,
         defaultClassLoader,

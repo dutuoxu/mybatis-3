@@ -33,6 +33,8 @@ import org.apache.ibatis.io.ResolverUtil;
 import org.apache.ibatis.io.Resources;
 
 /**
+ * 类型别名注册器<br>
+ * 此类初始化前会进行对应的类型注入操作
  * @author Clinton Begin
  */
 public class TypeAliasRegistry {

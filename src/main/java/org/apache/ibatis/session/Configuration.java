@@ -139,6 +139,9 @@ public class Configuration {
    */
   protected Class<?> configurationFactory;
 
+  /**
+   * dao层注册接口
+   */
   protected final MapperRegistry mapperRegistry = new MapperRegistry(this);
   protected final InterceptorChain interceptorChain = new InterceptorChain();
   protected final TypeHandlerRegistry typeHandlerRegistry = new TypeHandlerRegistry();

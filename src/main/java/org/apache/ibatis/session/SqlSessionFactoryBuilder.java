@@ -73,6 +73,12 @@ public class SqlSessionFactoryBuilder {
   }
 
   public SqlSessionFactory build(InputStream inputStream, String environment, Properties properties) {
+
+    // 调用这个方法时
+    //  public SqlSessionFactory build(InputStream inputStream) {
+    //      return build(inputStream, null, null);
+    //  }
+    // environment和properties都为null
     try {
       XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
       return build(parser.parse());
