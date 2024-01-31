@@ -13,21 +13,14 @@
  *    See the License for the specific language governing permissions and
  *    limitations under the License.
  */
-package org.dtx;
+package org.mybatis.othertest.reflection.anno;
 
-import org.apache.ibatis.builder.xml.XMLMapperEntityResolver;
-import org.junit.Test;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-
-public class JavaBeanTest {
-
-    @Test
-    public void test1(){
-
-        ArrayList<Object> list = new ArrayList<>();
-        System.out.println(Collection.class.isAssignableFrom(list.getClass()));
-    }
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.PARAMETER)
+public @interface Param1 {
 }
